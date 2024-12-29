@@ -1,0 +1,144 @@
+/* Container and layout styling */
+.container {
+    min-height: 100vh;
+    padding: 2rem 1rem;
+    background-color: #ffffff;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    min-height: 80vh;
+}
+
+/* Card container styling */
+.col-md-6 {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.border.rounded {
+    background: rgb(47, 169, 185);
+    border-radius: 12px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.border.rounded:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Title styling */
+.text-center {
+    color: #050505;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #4516c8;
+}
+
+/* Card styling */
+.card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.card-header {
+    background-color: #1c077b;
+    color: rgb(123, 235, 243);
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* List group styling */
+.list-group {
+    margin-top: 0;
+}
+
+.list-group-item {
+    padding: 1rem 1.5rem;
+    border-left: none;
+    border-right: none;
+    transition: background-color 0.2s ease;
+}
+
+.list-group-item:hover {
+    background-color: #7ab7f4;
+}
+
+.list-group-item b {
+    color: #2c3e50;
+    min-width: 150px;
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #271286;
+    border: none;
+    padding: 0.8rem 2rem;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Spacing utilities */
+.p-4 {
+    padding: 1.5rem !important;
+}
+
+.mt-2 {
+    margin-top: 1rem !important;
+}
+
+.my-2 {
+    margin-top: 0.75rem !important;
+    margin-bottom: 0.75rem !important;
+}
+
+.m-4 {
+    margin: 1.5rem !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .col-md-6 {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .text-center {
+        font-size: 1.5rem;
+    }
+
+    .list-group-item {
+        padding: 0.75rem 1rem;
+    }
+
+    .list-group-item b {
+        min-width: 120px;
+        display: block;
+        margin-bottom: 0.25rem;
+    }
+
+    .btn-primary {
+        width: 100%;
+        text-align: center;
+    }
+}

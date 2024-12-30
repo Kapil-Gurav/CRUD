@@ -48,6 +48,15 @@ video link - https://drive.google.com/file/d/1ROuxX1ZMsAyRWh-EM_v9tlFIoGcW-QSH/v
    ```bash
    git clone https://github.com/your-repo-name.git
 
+   ```
+2. Step up database by running the queries given below.
+3. After creating database, in Backend folder define you databse details in application.properties file
+   give database name, username and password. 
+4.  Run backend:
+   just click on run button on your IDE
+5. Rum Frontend:
+    -npm start
+
 ## Database Setup
 
 ### Required Table
